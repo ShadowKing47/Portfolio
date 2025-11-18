@@ -1,0 +1,13 @@
+# Placeholder for chatter@2x.png
+
+This is a placeholder file for retina/high-DPI displays.
+
+**Recommended specifications:**
+- Format: PNG
+- Dimensions: 3840x2160 pixels (4K / 2x retina)
+- File size: < 1MB (use TinyPNG to compress)
+- Content: Same as chatter.png but at 2x resolution
+
+**Note:** This is optional for retina displays. If file size is too large, you can skip this and use only chatter.png.
+
+Place your actual `chatter@2x.png` in this folder (`assets/images/`) if needed.

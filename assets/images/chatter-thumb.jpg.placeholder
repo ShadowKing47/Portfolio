@@ -1,0 +1,17 @@
+# Placeholder for chatter-thumb.jpg
+
+This is a placeholder file. Replace this with your actual project thumbnail image.
+
+**Recommended specifications:**
+- Format: JPG (optimized for web)
+- Dimensions: 600x400 pixels
+- File size: < 150KB
+- Content: Screenshot or hero image of the Chatter DApp interface
+
+**What to show:**
+- The messaging interface
+- Network visualization
+- Wallet connection UI
+- Or any compelling visual from your project
+
+Place your actual `chatter-thumb.jpg` in this folder (`assets/images/`).

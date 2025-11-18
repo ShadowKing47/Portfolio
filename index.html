@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 🔧 CHANGE THIS: Update with your name and description -->
+    <title>Noel Tony - Portfolio</title>
+    <meta name="description" content="Portfolio website showcasing my work as a developer">
+    
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ========== HEADER SECTION ========== -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- 🔧 CHANGE THIS: Replace with your logo/name -->
+                <div class="logo">Noel<span>Tony</span></div>
+                
+                <!-- Desktop Navigation -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            
+            <!-- Hero Content -->
+            <div class="header-text">
+                <!-- 🔧 CHANGE THIS: Update with your job title and name -->
+                <p>Full-Stack Developer | AI/ML Engineer</p>
+                <h1>Hi, I'm <span>Noel Tony</span><br>Building Intelligent Solutions</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column - Image -->
+                <div class="about-col-1">
+                    <!-- 🔧 CHANGE THIS: Replace with your photo -->
+                    <!-- Place your image in: assets/images/profile.jpg -->
+                    <img src="assets/images/Character.png" alt="Profile Photo">
+                </div>
+                
+                <!-- Right Column - About Content -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <!-- 🔧 CHANGE THIS: Write your bio (2-3 paragraphs) -->
+                    <p>
+                        I build end-to-end systems across AI, ML, and Web3—ranging from seismic analysis pipelines 
+                        and super-resolution models to clinical NLP agents and decentralized blockchain applications. 
+                        My work spans real-time anomaly detection, automated NFT workflows, RWA tokenization, on-chain 
+                        messaging, and predictive maintenance for industrial systems.
+                    </p>
+                    <p>
+                        I focus on creating scalable, production-ready solutions that reduce manual effort, cut 
+                        operational costs, and unlock automation across both cloud and decentralized environments.
+                    </p>
+                    
+                    <!-- Services Preview -->
+                    <div class="btn-group">
+                        <a href="#services" class="btn">View My Services</a>
+                        <a href="#portfolio" class="btn">View My Work</a>
+                    </div>
+                    
+                    <!-- Tab Titles -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <!-- Tab Contents -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <h3>Tech Stack</h3>
+                        
+                        <div class="skill-category">
+                            <h4>Languages</h4>
+                            <ul>
+                                <li><span>Python</span></li>
+                                <li><span>JavaScript</span></li>
+                                <li><span>TypeScript</span></li>
+                                <li><span>Solidity</span></li>
+                                <li><span>C++</span></li>
+                                <li><span>SQL</span></li>
+                                <li><span>Markdown</span></li>
+                                <li><span>PowerShell</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Frameworks & Libraries</h4>
+                            <ul>
+                                <li><span>React</span></li>
+                                <li><span>Next.js</span></li>
+                                <li><span>Node.js</span></li>
+                                <li><span>Django</span></li>
+                                <li><span>FastAPI</span></li>
+                                <li><span>Streamlit</span></li>
+                                <li><span>TailwindCSS</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>AI / ML</h4>
+                            <ul>
+                                <li><span>PyTorch</span></li>
+                                <li><span>TensorFlow</span></li>
+                                <li><span>Keras</span></li>
+                                <li><span>scikit-learn</span></li>
+                                <li><span>SciPy</span></li>
+                                <li><span>NumPy</span></li>
+                                <li><span>Pandas</span></li>
+                                <li><span>Matplotlib</span></li>
+                                <li><span>Plotly</span></li>
+                                <li><span>OpenCV</span></li>
+                                <li><span>mlflow</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Blockchain Tools</h4>
+                            <ul>
+                                <li><span>Web3.js</span></li>
+                                <li><span>Ethers.js</span></li>
+                                <li><span>OpenSea</span></li>
+                                <li><span>Hardhat</span></li>
+                                <li><span>Foundry</span></li>
+                                <li><span>Anvil</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Databases</h4>
+                            <ul>
+                                <li><span>MySQL</span></li>
+                                <li><span>PostgreSQL</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Other Tools</h4>
+                            <ul>
+                                <li><span>Git</span></li>
+                                <li><span>GitHub</span></li>
+                                <li><span>Docker</span></li>
+                                <li><span>Redis</span></li>
+                                <li><span>Selenium</span></li>
+                                <li><span>NPM</span></li>
+                                <li><span>Notion</span></li>
+                                <li><span>Postman</span></li>
+                                <li><span>Windows Terminal</span></li>
+                                <li><span>Anaconda</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <!-- 🔧 CHANGE THIS: Add your work experience -->
+                            <li><span>June 2025 - Present</span><br><strong>Full-Stack Developer</strong> - Cognimosity Learning Solutions Private Limited<br>
+                            Developed a RAG system with Django, vector search, and a Next.js frontend. Integrated a secure payment portal with automated subscriptions. Managed GCP cloud resources and deployments, containerized services with Docker, and scaled them for production.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <!-- 🔧 CHANGE THIS: Add your education -->
+                            <li><span>Your Degree Year</span><br>Your Degree - Your University<br><em>Add your education details here</em></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <!-- Service Card 1 -->
+                <div>
+                    <i class="fas fa-code"></i>
+                    <!-- 🔧 CHANGE THIS: Customize your services -->
+                    <h2>Full-Stack Development</h2>
+                    <p>
+                        Building scalable web applications with Django, FastAPI, Next.js, and React. 
+                        Expertise in cloud deployment (GCP), Docker containerization, payment integration, 
+                        and creating seamless user experiences with clean architecture.
+                    </p>
+                    <a href="#portfolio">View Projects</a>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div>
+                    <i class="fas fa-brain"></i>
+                    <h2>AI/ML Solutions</h2>
+                    <p>
+                        Developing intelligent systems with PyTorch, TensorFlow, and Keras. Creating 
+                        RAG systems, computer vision models, seismic analysis pipelines, and NLP chatbots 
+                        that deliver measurable business impact and automation.
+                    </p>
+                    <a href="#portfolio">View Projects</a>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div>
+                    <i class="fas fa-cube"></i>
+                    <h2>Data Processing & Blockchain</h2>
+                    <p>
+                        Building decentralized systems with Solidity, EVM tooling, and Web3 SDKs—expert in 
+                        tokenization, on-chain messaging, and automated NFT workflows, enabling scalable, 
+                        secure, and fully composable blockchain applications.
+                    </p>
+                    <a href="#portfolio">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== PORTFOLIO SECTION ========== -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <!-- Project 1 -->
+                <div class="work">
+                    <!-- 🔧 CHANGE THIS: Add your project images -->
+                    <!-- Place images in: assets/images/work1.jpg, work2.jpg, etc. -->
+                    <img src="assets/images/Seismic Analysis.png" alt="Seismic Activity Detector">
+                    <div class="layer">
+                        <!-- 🔧 CHANGE THIS: Add your project details -->
+                        <h3>Seismic Activity Detector</h3>
+                        <p>
+                            Built a compact seismic-analysis pipeline with MiniSEED/GeoCSV/XML ingestion, adaptive preprocessing, 
+                            and Conv1D/LSTM models for event/anomaly detection. Designed to save ~657 analyst hours (≈82 human-days).
+                        </p>
+                        <a href="https://astro-seismic-pulse.lovable.app/" target="_blank" rel="noopener" aria-label="View Seismic Activity Detector project"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="work">
+                    <img src="assets/images/ESPCNplusplus.png" alt="ESPCN++ Super Resolution">
+                    <div class="layer">
+                        <h3>ESPCN++ Super Resolution</h3>
+                        <p>
+                            Created a lightweight ESPCN-based ×6 SR model with skip connections and Single-Pixel Attention. 
+                            Auto-enhances ~40 catalog images/day, potentially saving ~1 human-day by removing manual SR recaptures.
+                        </p>
+                        <a href="https://github.com/ShadowKing47" target="_blank" rel="noopener" aria-label="View ESPCN++ project on GitHub"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="work">
+                    <img src="assets/images/AI Medical Bot.png" alt="Medical Bot">
+                    <div class="layer">
+                        <h3>Medical Bot</h3>
+                        <p>
+                            Developed a clinical chatbot using NLP (spaCy/Transformers), FastAPI, and LangChain. Parses prescriptions 
+                            and applies dosing rules. Designed to automate 200–2,000 prescriptions/day, saving 3–6 min each.
+                        </p>
+                        <a href="https://github.com/ShadowKing47" target="_blank" rel="noopener" aria-label="View Medical Bot project on GitHub"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Project 4: Chatter - On-Chain Messaging DApp -->
+                <div class="work" data-project="chatter" data-tech="Solidity, Foundry, EIP-4337, OpenZeppelin, Ethers.js, Docker">
+                    <img src="assets/images/ChatApp.png" data-src="assets/images/chatter.png" alt="Chatter on-chain messaging DApp network visualization" loading="lazy">
+                    <div class="layer">
+                        <h3>Chatter — On-Chain Messaging DApp</h3>
+                        <p>
+                            Built an on-chain chat DApp with an event-based Solidity contract for low-cost messaging and wallet 
+                            identity via EIP-4337 account abstraction, plus an indexing layer for real-time message streaming.
+                        </p>                        
+                        <a href="https://github.com/ShadowKing47" target="_blank" rel="noopener" aria-label="View Chatter on-chain messaging project"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <!-- Left Column - Contact Info -->
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <!-- 🔧 CHANGE THIS: Update with your email -->
+                    <p><i class="fas fa-paper-plane"></i> noelnoel255@gmail.com</p>
+                    
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <!-- 🔧 CHANGE THIS: Add your social media links -->
+                        <a href="https://www.linkedin.com/in/noel-tony-0b0878248" target="_blank" rel="noopener" aria-label="Visit LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ShadowKing47" target="_blank" rel="noopener" aria-label="Visit GitHub profile"><i class="fab fa-github"></i></a>
+                    </div>
+                    
+                    <!-- Download CV Button -->
+                    <!-- 🔧 CHANGE THIS: Place your resume PDF in assets/resume/resume.pdf -->
+                    <a href="https://drive.google.com/file/d/1QIYOcsX86OAXa0DZOD83QSSJ9bilNyZM/view?usp=sharing" target="_blank" rel="noopener" class="btn btn2">Download CV</a>
+                </div>
+                
+                <!-- Right Column - Contact Form -->
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <div class="copyright">
+        <!-- 🔧 CHANGE THIS: Update with your name -->
+        <p>Copyright © Noel Tony. Made with <i class="fas fa-heart"></i></p>
+    </div>
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "@id": "#chatter-project",
+      "name": "Chatter — On-Chain Messaging DApp",
+      "description": "Built an on-chain chat DApp with an event-based Solidity contract for low-cost messaging and wallet identity via EIP-4337 account abstraction, plus an indexing layer for real-time message streaming.",
+      "author": {
+        "@type": "Person",
+        "name": "Noel Tony",
+        "url": "https://github.com/ShadowKing47"
+      },
+      "keywords": "Solidity, Foundry, EIP-4337, OpenZeppelin, Ethers.js, Docker, Blockchain, Web3, DApp, On-chain messaging",
+      "programmingLanguage": "Solidity",
+      "url": "https://github.com/ShadowKing47",
+      "dateCreated": "2025"
+    }
+    </script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
