@@ -105,7 +105,7 @@ nav ul li a:hover::after {
 
 /* Hero Text */
 .header-text {
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 30px;
 }
 
@@ -610,7 +610,7 @@ form .btn2 {
     
     /* Hero Text */
     .header-text {
-        margin-top: 50%;
+        margin-top: 40%;
         font-size: 18px;
     }
     
